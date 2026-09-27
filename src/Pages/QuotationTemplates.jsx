@@ -216,7 +216,7 @@ export default function QuotationTemplates() {
     const totalFinancials = templates.reduce((s, t) => s + (t.financialRows?.length || 0), 0);
 
     return (
-        <div className="max-w-6xl">
+        <div className="max-w-6xl mx-auto">
             {/* ── Header ── */}
             <div className="flex items-start justify-between mb-6 flex-wrap gap-4">
                 <div>

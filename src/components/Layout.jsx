@@ -27,8 +27,10 @@ export default function Layout() {
             <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
             <div className="flex-1 flex flex-col min-w-0">
                 <Navbar onMenuClick={() => setCollapsed(!collapsed)} />
-                <main className="flex-1 overflow-y-auto p-6 max-md:p-3 bg-slate-50">
-                    <Outlet />
+                <main className="flex-1 overflow-y-auto bg-slate-50">
+                    <div className="w-full px-3 py-4 sm:px-6 sm:py-6">
+                        <Outlet />
+                    </div>
                 </main>
             </div>
         </div>
