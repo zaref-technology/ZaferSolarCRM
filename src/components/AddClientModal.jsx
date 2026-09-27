@@ -4,7 +4,7 @@ import { X, CheckCircle, Loader2, IndianRupee, Briefcase, FileText, User, Phone,
 import { collection, writeBatch, doc, serverTimestamp } from "firebase/firestore";
 import { db } from "../../firebase";
 import toast from "react-hot-toast";
-
+// new 
 export default function AddClientModal({ isOpen, onClose, onClientAdded, prefillData }) {
     const [formData, setFormData] = useState({
         name: "",
